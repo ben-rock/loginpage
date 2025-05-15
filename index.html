@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        .imgcontainer{
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        img.avatar{
+            clip-path: circle();
+            width: 40%;
+        }
+        .inputee{
+            width: 70%;
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+        button{
+            background-color: #04AA6D;
+            border: none;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+        }
+        .cancelbtn{
+            background-color: red;
+            width: auto;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        span.psw{
+            float: right;
+            padding-top: 18px;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <h2>Login Form</h2>
+   <div class="card">
+   <form method="post" action="script.js">
+    <div class="imgcontainer">
+        <img src="me.jpg" alt="avatar" class="avatar">    
+    </div>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" class="inputee" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" class="inputee" placeholder="Enter Password" name="psw" required>
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked  name="remember"> Remember me
+        </label>
+    </div>
+    <div class="container" style="background-color: #f1f1f1;">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a> </span>
+    </div>
+   </form>
+   </div>
+</body>
+</html>
